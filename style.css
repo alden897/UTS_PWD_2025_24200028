@@ -43,6 +43,7 @@ header img:hover {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .btn-primary:hover {
@@ -58,6 +59,12 @@ header img:hover {
     background-color:white;
 }   
 
+.fas {
+    color:var(--biru-utama) ;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
 .step {
     border-radius: 12px;
     padding: 30px;
@@ -66,17 +73,18 @@ header img:hover {
 }
 .reviews {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:unset;
+    flex-wrap: inherit;
     padding: 60px 20px;
+    justify-content: center;
     gap: 30px;
     background-color:white;
 }
 
 .review {
+    margin-top: 1rem;
     background:var(--light-gray);
     border-radius: 12px;
     padding: 30px;
     width: 280px;
-
 }
+
