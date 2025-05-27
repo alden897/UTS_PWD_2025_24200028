@@ -51,18 +51,25 @@ header img:hover {
 }
 
 .steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px 20px;
-    gap: 30px;
-    background-color:white;
+    background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 90px;
 }   
 
 .fas {
     color:var(--biru-utama) ;
     margin-bottom: 2rem;
     font-size: 2rem;
+}
+.step h3 {
+  color: var(--warna-nutama);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .step {
@@ -72,19 +79,28 @@ header img:hover {
     text-align: center;
 }
 .reviews {
-    display: flex;
-    flex-wrap: inherit;
-    padding: 60px 20px;
-    justify-content: center;
-    gap: 30px;
-    background-color:white;
+  border-top: 1px solid grey;
+  padding: 60px 20px;
 }
 
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  margin: 30px 20px;
+  text-align: center;
+  justify-content: center;
+  }
+
 .review {
-    margin-top: 1rem;
-    background:var(--light-gray);
-    border-radius: 12px;
-    padding: 30px;
-    width: 280px;
+  background-color: var(--light-gray);
+  padding: 30px 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  max-width: 300px; 
+  margin: 0 auto;
+  display: grid;
 }
 
