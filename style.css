@@ -4,7 +4,169 @@
     --light-gray:  #f6f8fb;
     --dark-gray: #6c757d;
 }
+:root {
+    --warna-utama: #2d2d2d;
+    --biru-utama: #0046be;
+    --light-gray:  #f6f8fb;
+    --dark-gray: #6c757d;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: var(--light-gray);
+    padding:60px 20px;
+    text-align: center;
+}
+
+header img {
+    width: 260px;
+    height: 120px;
+}
+
+header img:hover {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    40% {transform:translateY(-30px)}
+    10% { transform:translateY(-10px); }
+}
+
+.btn-primary {
+    background:var(--biru-utama);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #00a6ff ;
+}
+
+.steps {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 90px;
+}   
+
+.fas {
+    color:var(--biru-utama) ;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.step h3 {
+    color: var(--warna-nutama);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.step {
+    border-radius: 12px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+}
+.reviews {
+    border-top: 1px solid grey;
+    padding: 60px 20px;
+}
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    margin: 30px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+.review {
+    background-color: var(--light-gray);
+    padding: 30px 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    max-width: 300px; 
+    margin: 0 auto;
+    display: grid;
+}
+
+.reviews h2 {
+    color: var(--warna-utama);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+.review p {
+    text-align: center;
+    color: var(--warna-utama);
+    font-size: 1rem;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+  
+  .review h4 {
+    text-align: center;
+    color: var(--biru-utama);
+  }
+  
+  .cta{
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+  }
+  
+  .cta h2{
+    color: var(--warna-utama);
+    font-size: 2rem;
+  }
+  
+  .cta p {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: var(--biru-utama);
+    color: var(--lightgray);
+    text-align: center;
+    padding: 20px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+        h1 {
+            font-size: 2.2rem;
+      }
+    }
+    section {
+        p {
+            font-size: 1rem;
+        }
+    }
+  }
 * {
     margin: 0;
     padding: 0;
